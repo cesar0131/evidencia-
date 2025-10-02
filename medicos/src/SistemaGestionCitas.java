@@ -3,7 +3,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Comparator; // Para ordenar citas al mostrar
+import java.util.Comparator; 
 
 
 public class SistemaGestionCitas {
@@ -214,4 +214,5 @@ public class SistemaGestionCitas {
                 .sorted(Comparator.comparing(Cita::getFecha).thenComparing(Cita::getHora))
                 .forEach(System.out::println);
     }
+
 }
