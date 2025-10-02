@@ -36,7 +36,7 @@ public class ProgramaCitasMedicas {
                     System.out.println(" Opción no válida. Intente de nuevo.");
             }
         }
-        scanner.close(); // Cerrar el scanner al finalizar el programa
+        scanner.close(); 
     }
 
     private static void iniciarSesionAdmin() {
@@ -141,7 +141,7 @@ public class ProgramaCitasMedicas {
         System.out.println("\n--- CREAR CITA ---");
         System.out.print("ID de la Cita: ");
         String idCita = scanner.next();
-        scanner.nextLine(); // Consumir el salto de línea pendiente
+        scanner.nextLine(); 
 
         LocalDate fechaCita = null;
         boolean fechaValida = false;
@@ -180,7 +180,7 @@ public class ProgramaCitasMedicas {
         sistema.crearCita(idCita, fechaCita, horaCita, idDoctor, idPaciente);
     }
 
-    // Helper para leer opciones de menú y manejar errores de entrada
+    
     private static int leerOpcion() {
         while (true) {
             try {
